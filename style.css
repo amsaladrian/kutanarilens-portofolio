@@ -17,8 +17,9 @@
         padding: 2rem 0;
     }
     .profile-container{
-        height: 15rem;
-        width: 15rem;
+        height: 12rem !important;
+        width: 12rem !important;
+        min-width: 12rem;
         margin: 0 auto;
     }
     #about h2{
@@ -27,6 +28,14 @@
     #about p{
         font-size: 1.2rem;
     }
+    .contact-links{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    font-size: 1vh;
+    
+}
 }
 html {
     scroll-behavior: smooth;
@@ -132,7 +141,7 @@ padding-bottom: 50vh;
 }
 #contact{
     text-align: center;
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 #contact h2{
     color: #ffda79;
