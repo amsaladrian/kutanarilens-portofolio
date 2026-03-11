@@ -15,6 +15,7 @@
 <title>kutanarilens</title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <header class="header">
         <a href="#" class="logo-link">
         <div class="logo"><img src="logo-white.png" alt=""> KUTANARILENS</div>
@@ -123,6 +124,35 @@
     });
 
 });
+</script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+  particlesJS('particles-js', {
+    "particles": {
+      "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+      "color": { "value": "#0890cf" }, /* Warna biru brand kamu */
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.5, "random": true },
+      "size": { "value": 3, "random": true },
+      "line_linked": { 
+        "enable": true, 
+        "distance": 150, 
+        "color": "#0890cf", 
+        "opacity": 0.2, 
+        "width": 1 
+      },
+      "move": { "enable": true, "speed": 2, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "grab" }, /* Garis akan mengikuti kursor */
+        "onclick": { "enable": true, "mode": "push" }
+      }
+    },
+    "retina_detect": true
+  });
 </script>
 </body>
 </html>
