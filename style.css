@@ -233,6 +233,7 @@ body::before {
     display: flex;
     justify-content: center;
     padding: 10vh;
+    padding-bottom: 0;
 }
 .firstpage{
     justify-content: center;
@@ -264,6 +265,9 @@ body::before {
 }
 #about, #project, #contact{
     scroll-margin-top: 150px;
+}
+#about{
+    scroll-margin-top: 40vh;
 }
 #project{
 padding-bottom: 50vh;
