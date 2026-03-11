@@ -10,7 +10,7 @@
     <meta name="keywords" content="Portfolio, Photography, Web Development, Kutanarilens">
     <meta property="og:title" content="Kutanarilens Porto">
     <meta property="og:description" content="Selamat datang di portofolio saya.">
-    <meta property="og:image" content="link-ke-foto-profil-kamu.jpg">
+    <meta property="og:image" content="amsal.png">
     <link rel="stylesheet" href="style.css">
 <title>kutanarilens</title>
 </head>
@@ -19,13 +19,24 @@
         <a href="#" class="logo-link">
         <div class="logo"><img src="/logo-white.png" alt=""> KUTANARILENS</div>
         </a>
-            <nav class="nav-menu">
-            <a href="#about" class="nav-item">About</a>
-            <a href="#project" class="nav-item">Project</a>
-            <a href="#contact" class="nav-item">Contact</a>
-        </nav>
+            <button class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-list">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#project" class="nav-item">Project</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
     </header>
     <main class="content">
+        <div class="landing-page">
+            <div class="kutanarilens-profile">
+                <img src="@kutanarilens-KNL-LOGOico.png" alt="kutanarilens logo">
+                <h2>Welcome To KUTANARILENS</h2>
+            </div>
+        </div>
         <div class="about-div">
             <div id="about">
                 <h2>Halo!</h2>
@@ -39,9 +50,9 @@
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Project Alpha" class="project-image">
-                    <h3>Project Alpha</h3>
-                    <p>Deskripsi singkat tentang proyek pertama kamu di sini.</p>
+                    <img src="foodsplash.png" alt="Foodsplash" class="project-image">
+                    <h3>FoodSplash</h3>
+                    <p>Aplikasi pesan antar makanan lokal berbasis flutter sebagai frontend, dan laravel sebagai backend.</p>
                     <a href="#" class="btn-view">Lihat Selengkapnya</a>
                 </div>
                 <div class="project-card">
@@ -60,9 +71,33 @@
         </div>
         <div id="contact">
             <h2>Hubungi Saya</h2>
-            <div class="contact-links">
-                <a href="https://www.instagram.com/kutanarilens/" target="_blank" rel="noopener noreferrer">Instagram: @kutanarilens</a>
-                <a href="mailto:kutanarilens@gmail.com?subject=Tanya Portofolio&body=Halo Amsal, saya tertarik bekerja sama.">Email: kutanarilens@gmail.com</a>
+            <div class="contact-links"> 
+                <div class="contact-box">
+                    <a href="https://www.instagram.com/kutanarilens/" target="_blank" rel="noopener noreferrer">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0890cf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <div class="contact-text"><strong>Instagram</strong><br>@kutanarilens</div>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a href="mailto:kutanarilens@gmail.com">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0890cf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <div class="contact-text"><strong>Email</strong><br>kutanarilens@gmail.com</div>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a href="https://github.com/amsaladrian" target="_blank">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0890cf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <div class="contact-text"><strong>Github</strong><br>Amsal Adrian Ginting</div>
+                    </a>
+                </div>
+
+                <div class="contact-box">
+                    <a href="https://www.linkedin.com/in/amsaladrian/" target="_blank">
+                        <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0890cf" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <div class="contact-text"><strong>Linkedin</strong><br>Amsal Adrian Ginting</div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
@@ -78,6 +113,16 @@
             header.classList.remove('scrolled');
         }
     });
+    document.addEventListener("DOMContentLoaded", function () {
+
+    const menuToggle = document.getElementById("mobile-menu");
+    const navList = document.getElementById("nav-list");
+
+    menuToggle.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+
+});
 </script>
 </body>
 </html>
